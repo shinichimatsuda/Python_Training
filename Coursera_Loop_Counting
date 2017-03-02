@@ -39,3 +39,14 @@ for value in [9, 41, 12, 3, 74, 15]:
         found = True
     print(found, value)
 print('After')
+
+# Find the smallest value
+smallest = None
+print('Before')
+for value in [9, 41, 12, 3, 74, 15] :
+    if smallest is None : # "is" operation. there is also "is not" operation.
+        smallest = value
+    elif value < smallest :
+        smallest = value
+    print(smallest, value)
+print('After', smallest)
