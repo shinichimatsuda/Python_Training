@@ -1,0 +1,24 @@
+# This works on Python 2.
+
+largest = None
+smallest = None
+while True:
+    try:
+        num = raw_input("Enter a number: ")
+        
+        # Handle the edge cases
+        if num == "done" :
+            break
+        if len(num) < 1 :
+            break
+        
+        num = int(num)
+        if largest is None or largest < num:
+            largest = num
+        if smallest is None or smallest > num:
+            smallest = num
+    except:
+        print 'Invalid input'  
+
+print "Maximum is", largest
+print "Minimum is", smallest
