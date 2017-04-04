@@ -1,0 +1,13 @@
+# Count new words in dictionary¶
+
+counts = dict()
+names = ['Ichiro','Matsui','Sasaki','Kuroda']
+
+for name in names:
+    if name not in counts:
+        counts[name] = 1
+    else:
+        counts[name] = counts[name] + 1
+print(counts)
+
+# output: {'Matsui': 1, 'Ichiro': 1, 'Kuroda': 1, 'Sasaki': 1}
