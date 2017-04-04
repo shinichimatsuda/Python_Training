@@ -11,3 +11,15 @@ for name in names:
 print(counts)
 
 # output: {'Matsui': 1, 'Ichiro': 1, 'Kuroda': 1, 'Sasaki': 1}
+
+# The get method for dictionary
+
+if name in counts:
+    print(counts[name])
+else:
+    print(0)
+#output: 1
+
+print(counts.get(name,0)) # here, 0 is a default value if key dose not exist (and no Traceback). Very valuable!
+#output: 1
+
